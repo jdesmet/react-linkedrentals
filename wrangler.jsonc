@@ -2,17 +2,10 @@
 	"$schema": "./node_modules/wrangler/config-schema.json",
 	// Top-level configuration
 	"name": "linked-rentals-worker",
-	"main": "src/index.html",
+	"main": "index.html",
 	// Set this to today's date
 	"compatibility_date": "2026-09-12",
     "pages_build_output_dir": "./dist/client",
-    "site":{
-      "bucket" : "./dist/client"
-    },
 	"workers_dev": false,
 
-	"route": {
-		"pattern": "*/*",
-		"zone_name": "linked-rentals.com",
-	},
 }
