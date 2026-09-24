@@ -16,9 +16,12 @@ export default defineConfig({
     serverDir: "routes",
   },
   staged: {
-    ".{ts,tsx,js,jsx,vue}": ["eslint --fix", "vp fmt --write"],
-    ".{css,scss,sass,less,styl}": ["stylelint --fix", "vp fmt --write"],
-    "*.{json,md,yml,yaml}": ["vp fmt --write"],
+    ".{ts,tsx,js,jsx,vue}": ["eslint --fix", "vp fmt --write --no-error-on-unmatched-pattern"],
+    ".{css,scss,sass,less,styl}": [
+      "stylelint --fix",
+      "vp fmt --write --no-error-on-unmatched-pattern",
+    ],
+    "*.{json,md,yml,yaml}": ["vp fmt --write --no-error-on-unmatched-pattern"],
   },
   fmt: {
     singleQuote: true,
