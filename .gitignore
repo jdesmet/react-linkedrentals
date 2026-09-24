@@ -81,3 +81,6 @@ out/
 .pnp.*
 
 .vite-hooks/pre-commit
+
+.output
+.wrangler

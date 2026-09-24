@@ -11,9 +11,18 @@ export default defineConfig({
         "frame-ancestors 'self' https://linked-rentals.com https://*.linked-rentals.com",
     },
   },
+  nitro: {
+    preset: "cloudflare-module",
+    serverDir: "routes",
+  },
   staged: {
-    ".{ts,tsx,js,jsx,vue}": ["eslint --fix", "prettier --write"],
-    ".{css,scss,sass,less,styl}": ["stylelint --fix", "prettier --write"],
-    "*.{json,md,yml,yaml}": ["prettier --write"],
+    ".{ts,tsx,js,jsx,vue}": ["eslint --fix", "vp fmt --write"],
+    ".{css,scss,sass,less,styl}": ["stylelint --fix", "vp fmt --write"],
+    "*.{json,md,yml,yaml}": ["vp fmt --write"],
+  },
+  fmt: {
+    singleQuote: true,
+    semi: true,
+    trailingComma: "all",
   },
 });
