@@ -23,4 +23,9 @@ export default defineConfig({
     ],
     "*.{json,md,yml,yaml}": ["vp fmt --write --no-error-on-unmatched-pattern"],
   },
+  fmt: {
+    singleQuote: false,
+    semi: true,
+    trailingComma: "none",
+  },
 });
