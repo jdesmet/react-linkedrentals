@@ -1,0 +1,8 @@
+{
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "react-linkedrentals",
+	"main": "index.html",
+	"compatibility_date": "2026-09-12",
+	"pages_build_output_dir": "./dist/client",
+	"workers_dev": false,
+}
