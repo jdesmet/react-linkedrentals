@@ -21,7 +21,7 @@
 		"@vitejs/plugin-react": "^6.1.1",
 		"nitro": "^3.0.260903-beta",
 		"vite": "npm:@voidzero-dev/vite-plus-core@0.3.3",
-		"vite-plus": "0.3.3",
+		"vite-plus": "1.1.0",
 		"wrangler": "^4.130.0"
 	},
 	"overrides": {
