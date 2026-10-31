@@ -16,13 +16,13 @@
 		"react-router-dom": "^7.18.3"
 	},
 	"devDependencies": {
-		"@cloudflare/vite-plugin": "^1.54.6",
+		"@cloudflare/vite-plugin": "^1.66.0",
 		"@types/node": "^22.20.2",
 		"@vitejs/plugin-react": "^6.1.1",
 		"nitro": "^3.0.260903-beta",
 		"vite": "npm:@voidzero-dev/vite-plus-core@0.3.3",
 		"vite-plus": "0.3.3",
-		"wrangler": "^4.130.0"
+		"wrangler": "^4.154.0"
 	},
 	"overrides": {
 		"vite": "npm:@voidzero-dev/vite-plus-core@0.3.3"
